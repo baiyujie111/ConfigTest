@@ -7,7 +7,7 @@ spring:
 zuul:
   routes:
     # 简洁写法
-#    product: /myProduct2/**
+#    product: /myProduct3/**
     # myProduct:
     #   path: /myProduct/**
     #   serviceId: product
