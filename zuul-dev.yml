@@ -1,0 +1,17 @@
+zuul:
+  routes:
+    # 简洁写法
+#    product: /myProduct/**
+    # myProduct:
+    #   path: /myProduct/**
+    #   serviceId: product
+# 设置敏感过滤器为空 默认是将cookie拦截
+      sensitiveHeaders:
+   # 排除某些路由 这样访问的时候就是404
+#   ignored-patterns:
+#    - /**/product/list
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
